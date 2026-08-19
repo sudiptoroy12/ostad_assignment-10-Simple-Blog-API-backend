@@ -1,0 +1,18 @@
+{
+  "name": "simple-blog-api",
+  "version": "1.0.0",
+  "description": "blog-api",
+  "license": "ISC",
+  "author": "sudipto roy",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.3",
+    "nodemon": "^3.1.14"
+  }
+}
