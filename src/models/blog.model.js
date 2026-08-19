@@ -3,15 +3,15 @@ import mongoose  from "mongoose";
 const blogSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: [true, "Please provide a title for this blog"],
+        required: true,
     },
     description: {
         type: String,
-        required: [true, "Please provide a description for this blog"],
+        required: true,
     },
-    aurhor: {
+    author: {
         type: String,
-        required: [true, "Please provide a author for this blog"],
+        required: true,
     }
 },{timestamps: true})
 
