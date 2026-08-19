@@ -1,9 +1,9 @@
-const bloger = (req, res, next) => {
-    console.log(`Request received for ${req.method} ${req.url}`);
+const log = (req, res, next) => {
+    console.log(`Request received: ${req.method} ${req.url}`);
 
     next();
 
 
 }
 
-export default bloger
+export default log

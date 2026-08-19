@@ -4,7 +4,8 @@ import blogRoutes from "./routes/blog.route.js"
 
 
 import connectDB from "./db/db.js"
-import bloger from "./middlewares/blog.middleware.js";
+
+import log from "./middlewares/blog.middleware.js";
 dotenv.config()
 
 
@@ -14,7 +15,7 @@ const PORT = process.env.PORT || 8000;
 
 app.use(express.json())
 
-app.use(bloger)
+app.use(log)
 
 app.use("/api",blogRoutes)
 
