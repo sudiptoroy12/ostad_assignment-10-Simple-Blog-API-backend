@@ -48,7 +48,7 @@ export const createBlogWithAI = async (req, res) => {
       }),
     });
     const data = await response.json();
-    console.log(data);
+    
     console.log(data?.choices?.[0]?.message?.content?.trim());
     const results =
       data?.choices?.[0]?.message?.content?.trim() || "No response generated.";
